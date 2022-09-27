@@ -26,13 +26,13 @@ def faceEncodings(images):
 encodeListKnown = faceEncodings(images)
 print("All Encodings Complete!!!!")
 
-# def attendance(name):
-#     with open('Attendance.csv', 'r+') as f:
-#         myDataList = f.readLines()
-#         nameList = []
-#         for line in myDataList:
-#             entry = line.split(',')
-#             nameList.append(entry[0])
+def attendance(name):
+    with open('Attendance.csv', 'r+') as f:
+        myDataList = f.readLines()
+        nameList = []
+        for line in myDataList:
+            entry = line.split(',')
+            nameList.append(entry[0])
             
 #         if name not in nameList:
 #             time_now = datetime.now()
